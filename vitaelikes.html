@@ -10,10 +10,12 @@
 </html>
 <script type="text/javascript">
 	function likesget() {
-		for(let i = 57578; i<57598; i++){
-			document.getElementById('likelink').href = "https://vitae.co/sm/index.php/post/do_like_post/"+i;
-			document.getElementById('likelink').click()
-			console.log("likescut")
+		for(let i = 57600; i<57610; i++){
+		    var TheNewWin = window.open("https://vitae.co/sm/index.php/post/do_like_post/"+i);
+
+    TheNewWin.blur();
+    TheNewWin.close();
+console.log(i+" liked")
 
 		}
 	}
