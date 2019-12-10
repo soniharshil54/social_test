@@ -5,17 +5,15 @@
 </head>
 <body>
 	<h1>update</h1>
-	<a href="" id="likelink">btn it is</a>
+	<a href="" target="_blank" id="likelink">btn it is</a>
 </body>
 </html>
 <script type="text/javascript">
 	function likesget() {
-		for(let i = 57600; i<57610; i++){
-		    var TheNewWin = window.open("https://vitae.co/sm/index.php/post/do_like_post/"+i);
-
-    TheNewWin.blur();
-    TheNewWin.close();
-console.log(i+" liked")
+			for(let i = 57200; i<57210; i++){
+			document.getElementById('likelink').href = "https://vitae.co/sm/index.php/post/do_like_post/"+i;
+			document.getElementById('likelink').click()
+			console.log(i + " like")
 
 		}
 	}
